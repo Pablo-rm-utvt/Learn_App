@@ -7,7 +7,8 @@ import {Text, View } from 'react-native';
 // import { AuthProvider } from './src/context/AuthContext';
 // import { PeopleScreen } from './src/screens/PeopleScreen';
 // import { ScreemRick } from './src/screens/ScreemRick';
-import { SwapiScreen } from './src/screens/SwapiScreen';
+// import { SwapiScreen } from './src/screens/SwapiScreen';
+import { MyFirstComponent } from './src/screens/MyFirstComponent';
 const App= () => {
   return (
     // <AuthProvider>
@@ -18,10 +19,11 @@ const App= () => {
     //   <LoginScreen></LoginScreen>
     //   </View>
     // </AuthProvider>
-    <View style={{flex:1, justifyContent:"center", alignContent:"center",alignItems:"center"}}>
+    <View style={{flex:1}}>
     {/* <PeopleScreen/> */}
       {/* <ScreemRick></ScreemRick> */}
-      <SwapiScreen/>
+      {/* <SwapiScreen/> */}
+      <MyFirstComponent/>
     </View>
     
   );
