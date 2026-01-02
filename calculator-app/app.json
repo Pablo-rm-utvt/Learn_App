@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Calculadora rm",
-    "slug": "Calculadora rm",
+    "slug": "calculadorarm",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/logo.png",
@@ -21,10 +21,36 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.pablitos_utvt.calculadorarm"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "build": {
+      "production": {
+        "android": {
+          "image": "latest",
+          "buildType": "app-bundle"
+        },
+        "ios": {
+          "image": "latest",
+          "buildType": "release"
+        }
+      },
+      "preview": {
+        "android": {
+          "buildType": "apk"
+        },
+        "ios": {
+          "simulator": true
+        }
+      }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "f2eeb0e6-2af6-4a0c-af02-95a4ca0f3799"
+      }
     }
   }
 }
